@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/memotitleView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:text="Large Text"
+		android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+	<Button
+		android:id="@+id/removebutton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_x="268dp"
+		android:layout_y="4dp"
+		android:text="삭제"/>
+
+	<TextView
+		android:id="@+id/dateView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_x="0dp"
+		android:layout_y="30dp"
+		android:text="TextView"/>
+
+	<TextView
+		android:id="@+id/timeView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="17dp"
+		android:layout_x="94dp"
+		android:layout_y="30dp"
+		android:text="Small Text"
+		android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+</AbsoluteLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="메모를 적으세요"
+		android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<TableRow android:layout_width="fill_parent">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="0"
+				android:text="제목       :"
+				android:textSize="20dp">
+			</TextView>
+
+			<EditText
+				android:id="@+id/titleEditText1"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:hint="제목을 입력하시오">
+			</EditText>
+		</TableRow>
+
+		<TableRow android:layout_width="fill_parent">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="0"
+				android:text="메모내용:"
+				android:textSize="20dp">
+			</TextView>
+
+			<EditText
+				android:id="@+id/memoEditText"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:hint="메모할 내용을 입력하세요">
+			</EditText>
+		</TableRow>
+
+		<Button
+			android:id="@+id/memoaddbutton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="추가"/>
+
+		<Button
+			android:id="@+id/canclebutton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="취소"/>
+		
+	</TableLayout>
+
+</LinearLayout>
