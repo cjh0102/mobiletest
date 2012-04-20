@@ -18,11 +18,10 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-	enum MessageType {
-		SUCCESS, FAIL
-	}
+
 	private List<MyData> items;
 	private CustomAdapter customAdapter;
+	private final int SUCCESS = 1;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -39,14 +38,14 @@ public class MainActivity extends Activity {
 		addButton.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
 				Intent intent = new Intent(MainActivity.this, MemoActivity.class);
-				startActivityForResult(intent, MessageType.SUCCESS.ordinal());
+				startActivityForResult(intent, SUCCESS);
 			}
 		});
 	}
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
-		if (requestCode == MessageType.SUCCESS.ordinal()) {
+		if (requestCode == SUCCESS) {
 			if (resultCode == RESULT_OK) {
 				MyData myData = new MyData();
 
